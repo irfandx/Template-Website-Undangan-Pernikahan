@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Wedding Pengantin Pria & Pengantin Wanita </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/navicon.png" >
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1000, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+
+  </head>
+
+   <!-- BODY DI BUKA-->
+    <body>
+
+      <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+
+              <div class="navbar-header" >
+                <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="#">  Pengantin Pria & Pengantin Wanita  </a>
+              </div>
+
+              <div class="navbar-inverse side-collapse in">
+                <nav role="navigation" class="navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Akad">Akad</a></li>
+                    <li><a href="#Resepsi">Resepsi</a></li>
+                    <li><a href="#Galery">Galery</a></li>
+                    <li><a href="https://weddingkamu.com/">blog</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </header>
+
+          <script>
+          $(document).ready(function() {
+              var sideslider = $('[data-toggle=collapse-side]');
+              var sel = sideslider.attr('data-target');
+              var sel2 = sideslider.attr('data-target-2');
+              sideslider.click(function(event){
+                  $(sel).toggleClass('in');
+                  $(sel2).toggleClass('out');
+              });
+          });
+          </script>
+
+        <div class="banner" id="banner">
+          <h1>The Wedding <br><br>
+          Pengantin Pria & Pengantin Wanita</h1><br><br>
+          <h3>بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ<br></h3>
+          <p>
+              "Dan di antara tanda-tanda kekuasaanNya, diciptakanNya untukmu pasangan hidup
+               dari jenismu sendiri supaya kamu dapat ketenangan hati dan dijadikanNya kasih
+               sayang di antara kamu.Sesungguhnya yang demikian menjadi tanda-tanda
+               kebesaran-Nya bagi orang-orang yang berpikir."
+               Q.S. Ar-Rum: 21</p>
+        </div>
+
+      <div class="boxcontent"> <!--BUKA BOX CONTENT-->
+        <br><br>
+                  <div class="main" id="invitation">
+                    <img src="img/inv3.png" alt="">
+                  </div>
+                  <h1>About US</h1><br>
+                  <div class="card" id="About">
+                      <p>Putra Pertama <br> Bapak (ayah pengantin pria) & (Ibu pengantin Pria) </p>
+                      <div class="pp"><img src="img/dummy2.png" alt=""><p>Pengantin Pria<br><br>&</p></div>
+                      <p>Pengantin Wanita</p>
+                      <div class="pp2"><img src="img/dummy2.png" alt=""><p>Putri Pertama<br>Bapak (ayah pengantin wanita) & (Ibu pengantin wanita)</p></div>
+                  </div>
+                  <br/><br/>
+                  <div class="card" id="Akad">
+                    <h2>Akad Nikah</h2><br>
+                      <div class="akad">
+                          <p>Ganti dengan Tanggal Akad<br> xx:xx - xx:xx WIB<br> Ganti dengan Alamat Akad <br><br>
+                          Hitung mundur Menuju Ke Akad</p>
+                          <!--Timer Countdown Menghitung mundur dari tanggal dan waktu sekarang sampai ke hari pernikahan-->
+                          <div class="countdown">
+                          <p id="demo"></p>
+                          <script>
+                            // GANTI TANGGAL DI BAWAH DENGAN TANGGAL AKAD ANDA
+                            var countDownDate = new Date("Dec 31, 2020 13:00:00").getTime();
+
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+
+                              // Get today's date and time
+                              var now = new Date().getTime();
+
+                              // Find the distance between now and the count down date
+                              var distance = countDownDate - now;
+
+                              // Time calculations for days, hours, minutes and seconds
+                              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                              // Output the result in an element with id="demo"
+                              document.getElementById("demo").innerHTML = days + " h: " + hours + " j: "
+                              + minutes + " m: " + seconds + " d" ;
+
+                              // JIKA HITUNG MUNDUR HABIS AKAN MUNCUL TULISAN DI BAWAH INI, CONTOH : "HARI INI KAMI SUDAH HALAL : )"
+                              if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("demo").innerHTML = "HARI INI KAMI SUDAH HALAL :)";
+                              }
+                            }, 1000);
+                            </script>
+                            </div>
+                            <!--Timer Countdown tutup-->
+                      </div>
+
+                      <!-- Elemen kontainer peta -->
+                      <div class="gmaps">
+
+                        <!-- GANTI DI BAWAH INI DENGAN KODE GOOGLE MAPS ALAMAT AKAD -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.3813925416803!2d100.09921242497578!3d-0.5483610997494731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMzInNTQuMSJTIDEwMMKwMDYnMDMuNCJF!5e0!3m2!1sid!2sid!4v1568704856722!5m2!1sid!2sid"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+                      </div>
+                  </div>
+
+                  <br/>
+                  <br/>
+
+                  <div class="card" id="Resepsi">
+                    <h2>Resepsi</h2><br>
+                    <p>Ganti Dengan Tanggal Resepsi<br/>
+                      XX:XX - XX:XX WIB <br>
+                      Ganti Dengan Alamat Resepsi<br><br>
+                      <!-- GANTI KODE DIBAWAH INI DENGAN KODE GOOGLE MAPS ALAMAT RESEPSI -->
+                      <a href="https://goo.gl/maps/987ZGFexLNnqFMt49" target="_blank" class="btn btn-success btn-lg">Petunjuk GPS</a><br><br>
+                  </div>
+
+                  <br/>
+                  <br/>
+
+                  <!-- SLIDESHOW GALLERY -->
+
+                <div class="box center" id="Galery">
+                <h2>Galery</h2><br>
+                <div class="container">
+                       <br/>
+                       <div class="col-md-8 col-md-offset-2">
+                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                           <!-- Indicators -->
+                           <ol class="carousel-indicators">
+                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                             <li data-target="#myCarousel" data-slide-to="1"></li>
+                             <li data-target="#myCarousel" data-slide-to="2"></li>
+                             <li data-target="#myCarousel" data-slide-to="3"></li>
+                             <li data-target="#myCarousel" data-slide-to="4"></li>
+                           </ol>
+
+                           <!-- deklarasi carousel -->
+                           <div class="carousel-inner" role="listbox">
+                             <div class="item active">
+                               <!-- GANTI img/dummy1.png DI BAWAH DENGAN NAMA FOTO ANDA YANG TERSIMPAN DI FOLDER img, CONTOH : foto1.png-->
+                               <img src="img/dummy1.png" alt="Upload here">
+                               <div class="carousel-caption">
+                                 <h3></h3>
+                                 <p>GANTI DENGAN CAPTION</p>
+                               </div>
+                             </div>
+                             <div class="item">
+                               <!-- GANTI img/dummy1.png DI BAWAH DENGAN NAMA FOTO ANDA YANG TERSIMPAN DI FOLDER img, CONTOH : foto1.png-->
+                               <img src="img/dummy1.png" alt="Upload here">
+                               <div class="carousel-caption">
+                                 <h3></h3>
+                                 <p>Caption</p>
+                               </div>
+                             </div>
+                             <div class="item">
+                               <!-- GANTI img/dummy1.png DI BAWAH DENGAN NAMA FOTO ANDA YANG TERSIMPAN DI FOLDER img, CONTOH : foto1.png-->
+                               <img src="img/dummy1.png" alt="Upload here">
+                               <div class="carousel-caption">
+                                 <h3></h3>
+                                 <p>GANTI DENGAN CAPTION</p>
+                               </div>
+                             </div>
+                             <div class="item">
+                               <!-- GANTI img/dummy1.png DI BAWAH DENGAN NAMA FOTO ANDA YANG TERSIMPAN DI FOLDER img, CONTOH : foto1.png-->
+                               <img src="img/dummy1.png" alt="Upload here">
+                               <div class="carousel-caption">
+                                 <h3></h3>
+                                 <p>GANTI DENGAN CAPTION</p>
+                               </div>
+                             </div>
+                             <div class="item">
+                               <!-- GANTI img/dummy1.png DI BAWAH DENGAN NAMA FOTO ANDA YANG TERSIMPAN DI FOLDER img, CONTOH : foto1.png-->
+                               <img src="img/dummy1.png" alt="Upload here">
+                               <div class="carousel-caption">
+                                 <h3></h3>
+                                 <p>GANTI DENGAN CAPTION</p>
+                               </div>
+                             </div>
+                           </div>
+                           <!-- membuat panah next dan previous -->
+                           <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                             <span class="sr-only">Previous</span>
+                           </a>
+                           <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                             <span class="sr-only">Next</span>
+                           </a>
+                         </div>
+                       </div>
+                     </div>
+                   <script src="jquery.2.min.js"></script>
+                   <br>
+              </div>
+          </div> <!--TUTUP BOX CONTENT-->
+      <div class="footer">
+        <div class="subfooter">
+            <p>Total pengunjung</p>
+            <a class="hitCounter" href="https://visitorshitcounter.com/" target="_blank" title="Hit counter" data-name="7d7a6728906382d2e77061590b937171|5|page|1|#332323|#ffffff|small|s-hit">
+              Hit Counter</a><script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");</script>
+        <p>Copyright &#169;<a expr:href='https://cripcips.net/' rel='copyright'>Cripcips.net</a>
+          <!--DILARANG MENGHAPUS CREDIT WEB DESIGNER | copyright weddingkamu.com | contact : andyaruner@gmail.com  |-->
+      </div>
+      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

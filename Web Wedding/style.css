@@ -1,0 +1,324 @@
+body{
+  margin: 0;
+  padding-top: 30px;
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+}
+
+    pre {
+        tab-size: 8;
+    }
+
+    ul li a{
+    color: #2d465b;
+    font-family: "Raleway";
+    text-align: center;
+    }
+
+    ul li:hover{
+      background: #cc9900;
+    }
+
+    ul li a:hover{
+      color: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
+        .side-collapse-container{
+            width:100%;
+            position:relative;
+            left:0;
+            transition:left .4s;
+        }
+        .side-collapse-container.out{
+            left:200px;
+        }
+        .side-collapse {
+            top:50px;
+            bottom:0;
+            left:0;
+            width:200px;
+            position:fixed;
+            overflow:hidden;
+            transition:width .4s;
+        }
+        .side-collapse.in {
+            width:0;
+        }
+
+        #invitation img{
+          height: auto;
+          width: 100%;
+
+        }
+
+    }
+
+  .banner{
+    background-color: #212529;
+    background-image: url("img/map-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 1);
+    width: 100%;
+    min-height: auto;
+  }
+
+  .banner p{
+    font-size: 2rem;
+    text-align: left;
+    font-family: "Raleway";
+    font-style: italic;
+    color: white;
+  }
+  .banner h1{
+    font-size: 6rem;
+    color: #cc9900;
+    outline: black;
+    text-align: center;
+    position: relative;
+    font-family: 'Great Vibes';
+
+  }
+  .banner h3{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+  .boxcontent{
+    width: 100%;
+    height: auto;
+    background-image: url();
+    background-color: #ffffff;
+    background-image: url("");
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: auto;
+    text-align: center;
+  }
+  .boxcontent h1 {
+    font-style: normal;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: #cc9900;
+    outline: black;
+    font-size: 5rem;
+  }
+
+  #invitation{
+    height: auto;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #About{
+    min-height: 450px;
+    width: 90%;
+    border-radius:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgb(230,232,189);
+    background: linear-gradient(90deg, rgba(230,232,189,1) 0%, rgba(220,241,241,1) 51%, rgba(86,97,87,1) 97%);
+    background-image: url("img/floral5.svg");
+    background-size: cover;
+    overflow: auto;
+  }
+
+ #About p{
+    text-align: center;
+    font-style: normal;
+    font-size: 25px;
+    font-family: 'Bad Script';
+  }
+
+   .pp{
+     width: 100%;
+     min-height: 370px;
+     position: relative;
+
+   }
+   .pp img{
+     width: 250px;
+     height: 250px;
+     border-radius: 50% 50%;
+     position: relative;
+     top: 0;
+     bottom: 5px;
+     left: 1%;
+     transform: translate(-50%);
+   }
+
+
+   .pp2{
+     width: 100%;
+     min-height: 370px;
+     position: relative;
+   }
+   .pp2 img{
+     width: 250px;
+     height: 250px;
+     border-radius: 50% 50%;
+     position: relative;
+     bottom: 0px;
+     left: 25%;
+     transform: translate(-50%);
+   }
+
+   @media screen and (max-width: 768px) {
+     .pp img{
+       width: 250px;
+       height: 250px;
+       background-color: white;
+       border-radius: 50% 50%;
+       position: relative;
+       top: 0;
+       bottom: 5px;
+       left: 38%;
+       transform: translate(-50%);
+     }
+
+     .pp2 img{
+       width: 250px;
+       height: 250px;
+       background-color: white;
+       border-radius: 50% 50%;
+       position: relative;
+       bottom: 0px;
+       left: 38%;
+       transform: translate(-50%);
+     }
+
+
+   }
+
+  #Akad{
+    min-height: 500px;
+    width: 90%;
+    border-radius:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+  }
+  #Akad h2{
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: #cc9900;
+    outline: black;
+  }
+  .akad {
+    width: 100%;
+    height: auto;
+    float: left;
+    background: rgb(230,232,189);
+    background: linear-gradient(90deg, rgba(230,232,189,1) 0%, rgba(220,241,241,1) 51%, rgba(86,97,87,1) 97%);
+    opacity: 0.65;
+  }
+
+  .akad p{
+     text-align: center;
+     font-style: normal;
+     font-size: 30px;
+     font-family: "Raleway";
+    }
+
+  .gmaps {
+    float: right;
+    width: 100%;
+  }
+
+  .countdown{
+    width: auto;
+    height: auto;
+    background: rgb(230,232,189);
+    background: linear-gradient(90deg, rgba(230,232,189,1) 0%, rgba(87,179,179,1) 51%, rgba(86,97,87,1) 97%);
+  }
+  .countdown p {
+    text-align: center;
+  }
+
+  #Resepsi{
+    min-height: auto;
+    width: 90%;
+    border-radius:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+  }
+  #Resepsi h2{
+    font-style: normal;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: #cc9900;
+    outline: black;
+  }
+
+ #Resepsi p{
+   font-style: normal;
+   font-family: "Raleway";
+   font-size: 3.5vh;
+  }
+
+  #Galery{
+    min-height: 500px;
+    width: 90%;
+    border-radius:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    background-image: url("img/floral5.svg");
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10px;
+}
+  #Galery h2{
+    font-style: normal;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: #cc9900;
+    outline: black;
+  }
+
+  .footer{
+    background: rgb(230,232,189);
+    background: linear-gradient(90deg, rgba(230,232,189,1) 0%, rgba(220,241,241,1) 51%, rgba(86,97,87,1) 97%);
+    width: 100%;
+    min-height: 100px;
+    font-family: "Raleway";
+  }
+  .footer p  {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .subfooter img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .subfooter p{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hitCounter{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
